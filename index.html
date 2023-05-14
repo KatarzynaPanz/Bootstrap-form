@@ -7,11 +7,26 @@
     <title>Zadanie Ebicom</title>
   </head>
   <body class="bg-light">
-    <div class="row row-cols-6">
-        <div class="col">
-            <h3>Ekran 1</h3>
+    <!--<div class="row">
+        <div class="col-md-1">
+            <h5>Ekran 1</h5>
         </div>
-        <div class="col">
+        <div class="col-md-4">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Start</a></li>
+                    <li class="breadcrumb-item">Ekran nr 1</li>
+                </ol>
+            </nav>
+        </div>
+    </div> !-->
+    <div>
+        <div class="d-inline-block">
+            <h5 class="m-3">Ekran 1</h5>
+        </div>
+        <div class="d-inline-block" style="border-left:1px solid black; height: 20px; width: 0"></div>
+        <div class="d-inline-block">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active" aria-current="page"><a href="#">Home</a></li>
@@ -31,17 +46,30 @@
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFirstContainer">
             <div class="accordion-body">
                 <form class="row g-3">
-                    <div class="col-md">
+                    <div class="col-md-4">
                         <label for="Tekst" class="form-label">Tekst</label>
                         <input type="text" class="form-control" id="Tekst">
                     </div>
-                    <div class="col-md">
+                    <div class="col-md-4">
                         <label for="Tekst" class="form-label">Tekst<span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="Tekst">
                     </div>
-                    <div class="col-md">
+                    <div class="col-md-4">
                         <label for="Dropdown" class="form-label">Dropdown</label>
-                        <input type="text" class="form-control" id="Tekst">
+                        <select type="text" class="form-select" id="Dropdown">  
+                            <option selected>Placeholder</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="Dropwon" class="form-label">Dropdown</label>
+                        <input type="text" class="form-control" id="Dropdown">
+                    </div>
+                    <div class="col-md-8">
+                        <label for="Opis" class="form-label">Opis</label>
+                        <input type="text" class="form-control" id="Opis" placeholder="Placeholder" disabled>
                     </div>
                 </form>
             </div>
