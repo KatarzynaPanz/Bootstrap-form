@@ -95,7 +95,17 @@
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSecondContainer">
                 <div class="accordion-body">
                     <div class="first_line">
-                        <button type="button" class="btn btn-primary">Importuj</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#importujModal">Importuj</button>
+                            <div class="modal fade" id="importujModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-center" id="exampleModalLabel">Importuj</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         <img src="icons/refresh-ccw.svg"><p class="d-inline-block"><a href="#" class="text-decoration-none">Aktualizuj</a></p>
                         <p class="d-inline-block"><a href="#" class="text-decoration-none">Kopiuj</a></p>
                         <p class="d-inline-block"><a href="#" class="text-decoration-none">Wyczyść</a></p>
@@ -165,25 +175,25 @@
                                 <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-3  text-start">ID</div>
-                                        <div class="col-9  text-start">KLIENT</div>
+                                        <div class="col-9  text-start d-none d-md-block">KLIENT</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">         
                                     <div class="row">
-                                        <div class="col-6">DATA OD</div>
-                                        <div class="col-6">DATA DO</div>
+                                        <div class="col-6 d-none d-md-block">DATA OD</div>
+                                        <div class="col-6 d-none d-md-block">DATA DO</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="row">
-                                        <div class="col-9">UŻYTKOWNIK</div>
-                                        <div class="col-3">ETAP</div>
+                                        <div class="col-9 d-none d-md-block">UŻYTKOWNIK</div>
+                                        <div class="col-3 d-none d-md-block">ETAP</div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="row">
-                                        <div class="col-6">POST</div>
-                                        <div class="col-6">BŁĄD</div>
+                                        <div class="col-6 d-none d-md-block">POST</div>
+                                        <div class="col-6 d-none d-md-block">BŁĄD</div>
                                     </div>
                                 </div>
                                 <div class="col-md-1"></div>
