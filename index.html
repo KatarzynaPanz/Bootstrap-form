@@ -27,11 +27,13 @@
         <div class="me-2">
             <h4>Ekran nr 1</h4>
         </div>
-        <div style="border-left:1px solid gray; height: 24px; width: 0"></div>
+        <div class="position-relative">
+        <div class="position-absolute top-0 start-50 translate-middle-x" style="border-left:1px solid #a6acaf; height: 28px; width: 0"></div>
+        </div>
         <div class="align-self-baseline ms-2">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#" class="text-decoration-none"><img src="icons/home.svg" class="mb-1"></a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#" class="text-decoration-none"><img src="icons/home.svg" alt="home icon" class="mb-1"></a></li>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#" class="text-decoration-none" style="color: #05A8FF">Start</a></li>
                     <li class="breadcrumb-item">Ekran nr 1</li>
                 </ol>
@@ -97,20 +99,20 @@
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSecondContainer">
                 <div class="accordion-body">
                     <div class="first_line">
-                        <button type="button" class="btn btn-primary px-4 me-3" style="background-color: #05A8FF; border: 0" data-bs-toggle="modal" data-bs-target="#importModal">Importuj</button>
+                        <button type="button" class="btn btn-primary px-4 me-3 mb-2" style="background-color: #05A8FF; border: 0" data-bs-toggle="modal" data-bs-target="#importModal">Importuj</button>
                             <div class="modal fade modal-xl" id="importModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-x-button d-flex justify-content-end">
-                                            <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog" style="margin-top: 200px">
+                                    <div class="modal-content position-relative">
+                                        <div class="modal-x-button d-flex justify-content-end position-absolute top-0 start-100 translate-middle shadow mb-5 bg-body rounded">
+                                            <button type="button" class="btn btn-close p-3" style="background-color: white; opacity: 100; font-size: 10px; z-index: 10" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-titleHeader d-flex justify-content-center">
-                                            <h2 class="modal-title" id="exampleModalLabel">Importuj</h2>
+                                            <h2 class="modal-title mt-4" id="exampleModalLabel">Importuj</h2>
                                         </div>
-                                        <div class="modal-body">
+                                        <div class="modal-body mx-2">
                                             <h4>Lista klientów</h4>
                                             <div class="container-fluid mb-3">
-                                                <div class="row bg-light">
+                                                <div class="row py-1" style="background-color:  #e5e7e9 ">
                                                     <div class="col-5">
                                                         <div class="row">
                                                             <div class="col-2">ID</div>
@@ -119,15 +121,20 @@
                                                     </div>
                                                     <div class="col-7">
                                                         <div class="row">
-                                                            <div class="col-10">NAGŁÓWEK NR 3</div>
-                                                            <div class="col-2">@</div>
+                                                            <div class="col-11">NAGŁÓWEK NR 3</div>
+                                                            <div class="col-1">
+                                                                <div class="row">
+                                                                    <div class="col-11"></div>
+                                                                    <div class="col-1"><a href="#"><img src="icons/settings.svg" alt="settings icon" class="pb-1"></a></div>                                        
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row" style="border-bottom: 1px solid gray">
+                                                <div class="row py-1" style="border-bottom: 1px solid #a6acaf">
                                                     <div class="col-5">
                                                         <div class="row">
-                                                            <div class="col-2">Wybierz</div>
+                                                            <div class="col-2" style="color: #05A8FF">Wybierz</div>
                                                             <div class="col-10">Klient nr 1</div>
                                                         </div>
                                                     </div>
@@ -138,10 +145,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row" style="border-bottom: 1px solid gray">
+                                                <div class="row py-1" style="border-bottom: 1px solid #a6acaf">
                                                     <div class="col-5">
                                                         <div class="row">
-                                                            <div class="col-2">Wybierz</div>
+                                                            <div class="col-2" style="color: #05A8FF">Wybierz</div>
                                                             <div class="col-10">Klient nr 1</div>
                                                         </div>
                                                     </div>
@@ -152,24 +159,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row" style="border-bottom: 1px solid gray">
+                                                <div class="row py-1" style="border-bottom: 1px solid #a6acaf">
                                                     <div class="col-5">
                                                         <div class="row">
-                                                            <div class="col-2">Wybierz</div>
-                                                            <div class="col-10">Klient nr 1</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <div class="row">
-                                                            <div class="col-10">Jan Kowalski</div>
-                                                            <div class="col-2"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row" style="border-bottom: 1px solid gray">
-                                                    <div class="col-5">
-                                                        <div class="row">
-                                                            <div class="col-2">Wybierz</div>
+                                                            <div class="col-2" style="color: #05A8FF">Wybierz</div>
                                                             <div class="col-10">Klient nr 1</div>
                                                         </div>
                                                     </div>
@@ -182,17 +175,17 @@
                                                 </div>
                                             </div>
                                             <div class="modal-closing-button d-flex justify-content-end">
-                                                <button type="button" class="btn btn-primary">Zamknij</button>
+                                                <button type="button" class="btn btn-primary my-2 px-4" style="background-color: #05A8FF; border: 0">Zamknij</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        <img src="icons/refresh-ccw.svg" class="me-2"><p class="d-inline-block"><a href="#" class="text-decoration-none me-3">Aktualizuj</a></p>
-                        <img src="icons/copy.svg" class="me-2"><p class="d-inline-block"></p><p class="d-inline-block"><a href="#" class="text-decoration-none me-3">Kopiuj</a></p>
-                        <img src="icons/x-square.svg" class="me-2"><p class="d-inline-block"></p><p class="d-inline-block"><a href="#" class="text-decoration-none me-3">Wyczyść</a></p>
+                        <a href="#"><img src="icons/refresh-ccw.svg" alt="refresh icon" class="me-2 mb-1"></a><p class="d-inline-block"><a href="#" class="text-decoration-none me-3" style="color:#05A8FF">Aktualizuj</a></p>
+                        <a href="#"><img src="icons/copy.svg" alt="copy icon" class="me-2 mb-1"></a><p class="d-inline-block"></p><p class="d-inline-block"><a href="#" class="text-decoration-none me-3" style="color:#05A8FF">Kopiuj</a></p>
+                        <a href="#"><img src="icons/x-square.svg" alt="closing icon" class="me-2 mb-1"></a><p class="d-inline-block"></p><p class="d-inline-block"><a href="#" class="text-decoration-none me-3" style="color:#05A8FF">Wyczyść</a></p>
                     </div>
-                    <form class="row g-3">
+                    <form class="row g-3 gx-4">
                         <div class="col-md-4">
                             <label for="Tekst" class="form-label">Tekst</label>
                             <input type="text" class="form-control" id="Tekst" placeholder="Placeholder">
@@ -235,199 +228,199 @@
                             <label for="Tekst" class="form-label">Tekst</label>
                             <input type="text" class="form-control" id="Tekst" placeholder="Placeholder">
                         </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="switchCheck">
-                            <label class="form-check-label" for="switchCheck">Switch 1</label>
-                        </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="switchCheck">
-                            <label class="form-check-label" for="switchCheck">Switch 1</label>
-                        </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="switchCheck">
-                            <label class="form-check-label" for="switchCheck">Switch 1</label>
+                        <div class="ms-2">
+                            <div class="form-check form-switch mb-3 me-1 d-flex align-items-center">
+                                <input class="form-check-input me-3" type="checkbox" role="switch" id="switchCheck" style="transform: scale(1.3);">
+                                <label class="form-check-label fs-5" for="switchCheck">Switch 1</label>
+                            </div>
+                            <div class="form-check form-switch mb-3 me-1 d-flex align-items-center">
+                                <input class="form-check-input me-3" type="checkbox" role="switch" id="switchCheck" style="transform: scale(1.3);">
+                                <label class="form-check-label fs-5" for="switchCheck">Switch 2</label>
+                            </div>
+                            <div class="form-check form-switch mb-3 me-1 d-flex align-items-center">
+                                <input class="form-check-input me-3" type="checkbox" role="switch" id="switchCheck" style="transform: scale(1.3);">
+                                <label class="form-check-label fs-5" for="switchCheck">Switch 3</label>
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <label for="Tekst" class="form-label">Data sprzedaży zgłoszona na PWI</label>
                             <input type="text" class="form-control" id="Tekst" placeholder="Placeholder">
                         </div>
-                        <div class="list--container">
-                            <p>Lista</p>
-                            <div class="row table--header bg-light gx-1">
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-3 ">ID</div>
-                                        <div class="col-md-8 d-none d-md-block">KLIENT</div>
-                                        <div class="col-md-1 d-none d-md-block">                                          
-                                            <div class="row gx-0">
-                                                <div class="col-10">
-                                                    <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg"></button>
-                                                </div>
-                                                <div class="col-2 position-relative">
-                                                    <div class="position-absolute top-50 start-50 translate-middle" style="border-right:1px dotted black; height: 16px;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                                <div class="col-md-3">         
-                                    <div class="row gx-1">
-                                        <div class="col-5 d-none d-md-block">DATA OD</div>
-                                        <div class="col-1 d-none d-md-block">
-                                            <div class="row gx-1">
-                                                <div class="col-10">
-                                                    <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg"></button>
-                                                </div>
-                                                <div class="col-2 position-relative">
-                                                    <div class="position-absolute top-50 start-50 translate-middle" style="border-right:1px dotted black; height: 16px;"></div>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                        <div class="col-5 d-none d-md-block">DATA DO</div>
-                                        <div class="col-1 d-none d-md-block">
-                                            <div class="row gx-1">
-                                                <div class="col-10">
-                                                    <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg"></button>
-                                                </div>
-                                                <div class="col-2 position-relative">
-                                                    <div class="position-absolute top-50 start-50 translate-middle" style="border-right:1px dotted black; height: 16px;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-9 d-none d-md-block">UŻYTKOWNIK</div>
-                                        <div class="col-3 d-none d-md-block">ETAP</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="row gx-0">
-                                        <div class="col-6 d-none d-md-block">POSTĘP</div>
-                                        <div class="col-6 d-none d-md-block">BŁĄD</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-1"></div>
-                            </div>
                         
-                            <div class="row row--first gx-1" style="border-bottom: 1px solid gray;">
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-3">12</div>
-                                        <div class="col-5 col-md-6">Klient nr 1</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">         
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-6">05-09-2022 17:28</div>
-                                        <div class="col-5 col-md-6">05-09-2022 17:32</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-9">Jan Kowalski</div>
-                                        <div class="col-5 col-md-3">4/4</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-6">100%</div>
-                                        <div class="col-5 col-md-6">Nie</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-1">Pobierz</div>
-                            </div>
-                            <div class="row row--second gx-1" style="border-bottom: 1px solid gray;">
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-3">123</div>
-                                        <div class="col-5 col-md-9">Klient nr 4</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">         
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-6">05-09-2022 17:28</div>
-                                        <div class="col-5 col-md-6">05-09-2022 17:32</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-9">Krystian Nowak</div>
-                                        <div class="col-5 col-md-3">3/3</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-6">100%</div>
-                                        <div class="col-5 col-md-6">Nie</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-1">Pobierz</div>
-                            </div>
-                            <div class="row row--third gx-1" style="border-bottom: 1px solid gray;">
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-3">1234</div>
-                                        <div class="col-5 col-md-9">Klient nr 3</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">         
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-6">05-09-2022 17:28</div>
-                                        <div class="col-5 col-md-6">05-09-2022 17:32</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-9">Administrator</div>
-                                        <div class="col-5 col-md-3">4/4</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-6">100%</div>
-                                        <div class="col-5 col-md-6">Nie</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-1">Pobierz</div>
-                            </div>
-                            <div class="row row--fourth gx-1" style="border-bottom: 1px solid gray;">
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-3">12345</div>
-                                        <div class="col-5 col-md-9">Klient nr 4</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">         
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-6">05-09-2022 17:28</div>
-                                        <div class="col-5 col-md-6">05-09-2022 17:32</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-9">Katarzyna Kowalska</div>
-                                        <div class="col-5 col-md-3">3/3</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="row gx-0">
-                                        <div class="col-5 col-md-6">100%</div>
-                                        <div class="col-5 col-md-6">Nie</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-1"><img src="icons/download.svg" alt="download icon">Pobierz</div>
-                            </div>
-                        </div>
                     </form>
+                    <div class="list--container">
+                        <h4 class="my-3">Lista</h4>
+                       
+                        <div class="row table--header gx-1 py-1" style="background-color:  #e5e7e9">
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-3 ps-3">ID</div>
+                                    <div class="col-8 d-none d-md-block">KLIENT</div>
+                                    <div class="col-1 d-none d-lg-block" style="border-right:1px dotted #a6acaf; height: 20px;">
+                                        <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg" alt="sorting icon"></button>
+                                    </div>
+                                    <div class="col-1 d-none d-md-block d-lg-none">
+                                        <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg" alt="sorting icon"></button>
+                                    </div>
+                                </div>
+                            </div>                               
+                            <div class="col-md-3">         
+                                <div class="row gx-1">
+                                    <div class="col-5 d-none d-md-block">DATA OD</div>
+                                    <div class="col-1 d-none d-lg-block" style="border-right:1px dotted #a6acaf; height: 24px;">
+                                        <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg" alt="sorting icon"></button>
+                                    </div>
+                                    <div class="col-1 d-none d-md-block d-lg-none">
+                                        <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg" alt="sorting icon"></button>
+                                    </div>
+                                    <div class="col-5 d-none d-md-block">DATA DO</div>
+                                    <div class="col-1 d-none d-lg-block" style="border-right:1px dotted #a6acaf; height: 24px;">
+                                        <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg" alt="sorting icon"></button>
+                                    </div>
+                                    <div class="col-1 d-none d-md-block d-lg-none">
+                                        <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg" alt="sorting icon"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-9 d-none d-md-block">UŻYTKOWNIK</div>
+                                    <div class="col-3 d-none d-md-block">ETAP</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row gx-0">
+                                    <div class="col-6 d-none d-md-block">POSTĘP</div>
+                                    <div class="col-6 d-none d-md-block">BŁĄD</div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <ul class="list-unstyled">
+                        <li><div class="row row--first gx-1 py-1" style="border-bottom: 1px solid #a6acaf;">
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-3 ps-3" style="color:#05A8FF">12</div>
+                                    <div class="col-5 col-md-6">Klient nr 1</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">         
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-6">05-09-2022 17:28</div>
+                                    <div class="col-5 col-md-6">05-09-2022 17:32</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-9">Jan Kowalski</div>
+                                    <div class="col-5 col-md-3">4/4</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-6">100%</div>
+                                    <div class="col-5 col-md-6">Nie</div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"><img src="icons/download.svg" alt="download icon" class="mb-1 me-2">Pobierz</div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="row row--second gx-1 py-1" style="border-bottom: 1px solid #a6acaf;">
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-3 ps-3" style="color:#05A8FF">123</div>
+                                    <div class="col-5 col-md-9">Klient nr 4</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">         
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-6">05-09-2022 17:28</div>
+                                    <div class="col-5 col-md-6">05-09-2022 17:32</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-9">Krystian Nowak</div>
+                                    <div class="col-5 col-md-3">3/3</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-6">100%</div>
+                                    <div class="col-5 col-md-6">Nie</div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"><img src="icons/download.svg" alt="download icon" class="mb-1 me-2">Pobierz</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row row--third gx-1 py-1" style="border-bottom: 1px solid #a6acaf;;">
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-3 ps-3" style="color:#05A8FF">1234</div>
+                                    <div class="col-5 col-md-9">Klient nr 3</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">         
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-6">05-09-2022 17:28</div>
+                                    <div class="col-5 col-md-6">05-09-2022 17:32</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-9">Administrator</div>
+                                    <div class="col-5 col-md-3">4/4</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-6">100%</div>
+                                    <div class="col-5 col-md-6">Nie</div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"><img src="icons/download.svg" alt="download icon" class="mb-1 me-2">Pobierz</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row row--fourth gx-1 py-1" style="border-bottom: 1px solid #a6acaf">
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-3 ps-3" style="color:#05A8FF">12345</div>
+                                    <div class="col-5 col-md-9">Klient nr 4</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">         
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-6">05-09-2022 17:28</div>
+                                    <div class="col-5 col-md-6">05-09-2022 17:32</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-9">Katarzyna Kowalska</div>
+                                    <div class="col-5 col-md-3">3/3</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row gx-0">
+                                    <div class="col-5 col-md-6">100%</div>
+                                    <div class="col-5 col-md-6">Nie</div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"><img src="icons/download.svg" alt="download icon" class="mb-1 me-2">Pobierz</div>
+                        </div>
+                    </li>
+                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="button--container">
             <div class="d-flex justify-content-between mt-3">
                 <button type="button" class="btn btn-light btn-outline-secondary pl-2 pr-2"><span class="m-2">&lt</span>Wstecz</button>
-                <button type="button" class="btn btn-primary pl-2 pr-2">Dalej<span class="m-2">&gt</span></button>
+                <button type="button" class="btn btn-primary pl-2 pr-2" style="background-color: #05A8FF; border: 0">Dalej<span class="m-2">&gt</span></button>
             </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
