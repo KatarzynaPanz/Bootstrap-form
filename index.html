@@ -95,13 +95,93 @@
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSecondContainer">
                 <div class="accordion-body">
                     <div class="first_line">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#importujModal">Importuj</button>
-                            <div class="modal fade" id="importujModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#importModal">Importuj</button>
+                            <div class="modal fade modal-xl" id="importModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-center" id="exampleModalLabel">Importuj</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div class="modal-x-button d-flex justify-content-end">
+                                            <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-titleHeader d-flex justify-content-center">
+                                            <h2 class="modal-title" id="exampleModalLabel">Importuj</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4>Lista klientów</h4>
+                                            <div class="container-fluid mb-3">
+                                                <div class="row bg-light">
+                                                    <div class="col-5">
+                                                        <div class="row">
+                                                            <div class="col-2">ID</div>
+                                                            <div class="col-10">NAGŁÓWEK NR 2</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="row">
+                                                            <div class="col-10">NAGŁÓWEK NR 3</div>
+                                                            <div class="col-2">@</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="border-bottom: 1px solid gray">
+                                                    <div class="col-5">
+                                                        <div class="row">
+                                                            <div class="col-2">Wybierz</div>
+                                                            <div class="col-10">Klient nr 1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="row">
+                                                            <div class="col-10">Jan Kowalski</div>
+                                                            <div class="col-2"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="border-bottom: 1px solid gray">
+                                                    <div class="col-5">
+                                                        <div class="row">
+                                                            <div class="col-2">Wybierz</div>
+                                                            <div class="col-10">Klient nr 1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="row">
+                                                            <div class="col-10">Jan Kowalski</div>
+                                                            <div class="col-2"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="border-bottom: 1px solid gray">
+                                                    <div class="col-5">
+                                                        <div class="row">
+                                                            <div class="col-2">Wybierz</div>
+                                                            <div class="col-10">Klient nr 1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="row">
+                                                            <div class="col-10">Jan Kowalski</div>
+                                                            <div class="col-2"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="border-bottom: 1px solid gray">
+                                                    <div class="col-5">
+                                                        <div class="row">
+                                                            <div class="col-2">Wybierz</div>
+                                                            <div class="col-10">Klient nr 1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="row">
+                                                            <div class="col-10">Jan Kowalski</div>
+                                                            <div class="col-2"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-closing-button d-flex justify-content-end">
+                                                <button type="button" class="btn btn-primary">Zamknij</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -171,136 +251,166 @@
                         </div>
                         <div class="list--container">
                             <p>Lista</p>
-                            <div class="row table--header" style="background-color: gray;">
+                            <div class="row table--header bg-light gx-1">
                                 <div class="col-md-3">
-                                    <div class="row">
-                                        <div class="col-3  text-start">ID</div>
-                                        <div class="col-9  text-start d-none d-md-block">KLIENT</div>
+                                    <div class="row gx-0">
+                                        <div class="col-3 ">ID</div>
+                                        <div class="col-8 d-none d-md-block">KLIENT</div>
+                                        <div class="col-1 d-none d-md-block">                                          
+                                            <div class="row gx-0">
+                                                <div class="col-11">
+                                                    <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg"></button>
+                                                </div>
+                                                <div class="col-1 position-relative">
+                                                    <div class="position-absolute top-50 start-50 translate-middle" style="border-right:1px dotted black; height: 16px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </div>                               
                                 <div class="col-md-3">         
-                                    <div class="row">
-                                        <div class="col-6 d-none d-md-block">DATA OD</div>
-                                        <div class="col-6 d-none d-md-block">DATA DO</div>
+                                    <div class="row gx-0">
+                                        <div class="col-5 d-none d-md-block">DATA OD</div>
+                                        <div class="col-1 d-none d-md-block">
+                                            <div class="row gx-0">
+                                                <div class="col-11">
+                                                    <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg"></button>
+                                                </div>
+                                                <div class="col-1 position-relative">
+                                                    <div class="position-absolute top-50 start-50 translate-middle" style="border-right:1px dotted black; height: 16px;"></div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="col-5 d-none d-md-block">DATA DO</div>
+                                        <div class="col-1 d-none d-md-block">
+                                            <div class="row gx-0">
+                                                <div class="col-11">
+                                                    <button class="shadow-none border-0" style="background-color:transparent"><img src="icons/chevron-expand.svg"></button>
+                                                </div>
+                                                <div class="col-1 position-relative">
+                                                    <div class="position-absolute top-50 start-50 translate-middle" style="border-right:1px dotted black; height: 16px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-9 d-none d-md-block">UŻYTKOWNIK</div>
                                         <div class="col-3 d-none d-md-block">ETAP</div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="row">
-                                        <div class="col-6 d-none d-md-block">POST</div>
+                                    <div class="row gx-0">
+                                        <div class="col-6 d-none d-md-block">POSTĘP</div>
                                         <div class="col-6 d-none d-md-block">BŁĄD</div>
                                     </div>
                                 </div>
                                 <div class="col-md-1"></div>
                             </div>
                         
-                            <div class="row row--first" style="border-bottom: 1px solid gray;">
+                            <div class="row row--first gx-1" style="border-bottom: 1px solid gray;">
                                 <div class="col-md-3">
-                                    <div class="row text-start">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-3">12</div>
                                         <div class="col-5 col-md-6">Klient nr 1</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">         
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-6">05-09-2022 17:28</div>
                                         <div class="col-5 col-md-6">05-09-2022 17:32</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-9">Jan Kowalski</div>
                                         <div class="col-5 col-md-3">4/4</div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-6">100%</div>
                                         <div class="col-5 col-md-6">Nie</div>
                                     </div>
                                 </div>
                                 <div class="col-md-1">Pobierz</div>
                             </div>
-                            <div class="row row--second" style="border-bottom: 1px solid gray;">
+                            <div class="row row--second gx-1" style="border-bottom: 1px solid gray;">
                                 <div class="col-md-3">
-                                    <div class="row text-start">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-3">123</div>
                                         <div class="col-5 col-md-9">Klient nr 4</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">         
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-6">05-09-2022 17:28</div>
                                         <div class="col-5 col-md-6">05-09-2022 17:32</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-9">Krystian Nowak</div>
                                         <div class="col-5 col-md-3">3/3</div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-6">100%</div>
                                         <div class="col-5 col-md-6">Nie</div>
                                     </div>
                                 </div>
                                 <div class="col-md-1">Pobierz</div>
                             </div>
-                            <div class="row row--third" style="border-bottom: 1px solid gray;">
+                            <div class="row row--third gx-1" style="border-bottom: 1px solid gray;">
                                 <div class="col-md-3">
-                                    <div class="row text-start">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-3">1234</div>
                                         <div class="col-5 col-md-9">Klient nr 3</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">         
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-6">05-09-2022 17:28</div>
                                         <div class="col-5 col-md-6">05-09-2022 17:32</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-9">Administrator</div>
                                         <div class="col-5 col-md-3">4/4</div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-6">100%</div>
                                         <div class="col-5 col-md-6">Nie</div>
                                     </div>
                                 </div>
                                 <div class="col-md-1">Pobierz</div>
                             </div>
-                            <div class="row row--fourth" style="border-bottom: 1px solid gray;">
+                            <div class="row row--fourth gx-1" style="border-bottom: 1px solid gray;">
                                 <div class="col-md-3">
-                                    <div class="row text-start">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-3">12345</div>
                                         <div class="col-5 col-md-9">Klient nr 4</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">         
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-6">05-09-2022 17:28</div>
                                         <div class="col-5 col-md-6">05-09-2022 17:32</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-9">Katarzyna Kowalska</div>
                                         <div class="col-5 col-md-3">3/3</div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="row">
+                                    <div class="row gx-0">
                                         <div class="col-5 col-md-6">100%</div>
                                         <div class="col-5 col-md-6">Nie</div>
                                     </div>
